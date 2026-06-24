@@ -1,0 +1,78 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  background-image: url("../images/background_header.svg");
+  background-position: center;
+  background-size: cover;
+  min-height: 720px;
+  max-height: 800px;
+  height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.header__title {
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: -1px;
+  margin-top: 140px; /* Ajustado por conta do novo menu */
+  margin-left: 80px;
+  max-width: 700px;
+  z-index: 2;
+}
+
+.header__span-accent {
+  font-family: "Noto Serif", serif;
+  font-style: italic;
+  font-size: 58px;
+  line-height: 72px;
+  color: var(--color-accent-orange);
+  display: block;
+}
+
+.header__description {
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 683px;
+  margin-top: 24px;
+  margin-left: 80px;
+  z-index: 2;
+}
+
+/* Imagem do Lobo */
+.header__image {
+  position: absolute;
+  top: 124px;
+  right: 20px;
+  width: 45%;
+  max-width: 646px;
+  max-height: 568px;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.header__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto;
+  margin-bottom: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
+  width: 100%;
+}
+
+.header__footer-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.header__paragraph {
+  margin: 0 80px 0;
+}

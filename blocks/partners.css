@@ -1,0 +1,31 @@
+.partners {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.partners__title {
+  font-family: 'Noto Serif', serif;
+  color: var(--color-dark);
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+
+.partners__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.partners__logo {
+  max-width: 140px;
+  height: auto;
+  opacity: 1;
+  filter: none;
+  transition: transform 0.2s ease;
+}
+
+.partners__logo:hover {
+  transform: scale(1.05);
+}

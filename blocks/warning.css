@@ -1,0 +1,26 @@
+.warning {
+  background-color: var(--color-accent-orange); /* Fundo laranja do lobo-guará */
+  padding: 40px;
+  border-left: 8px solid var(--color-accent-green); /* Borda verde viva ao lado */
+  border-radius: 16px;
+  margin: 60px auto;
+  max-width: 800px;
+  box-shadow: 0 6px 25px rgba(214, 90, 34, 0.25); /* Sombra com brilho sutil */
+}
+
+.warning__title {
+  color: var(--color-white); /* Texto branco para leitura perfeita */
+  font-family: 'Noto Serif', serif;
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.warning__description {
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+  color: var(--color-white); /* Texto branco */
+  font-weight: 500;
+}

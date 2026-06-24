@@ -1,0 +1,40 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1160px;
+  margin: 20px auto 0; /* Afastado levemente do topo da tela */
+  padding: 15px 30px;
+  background-color: var(--color-white); /* Fundo branco para destacar no verde */
+  border-radius: 50px; /* Bordas bem arredondadas estilo moderno */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Sombra suave para dar profundidade */
+}
+
+.nav__logo {
+  width: 105px;
+  height: 39px;
+  object-fit: contain;
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  transition: color 0.2s ease;
+}
+
+.nav__link:hover {
+  color: var(--color-accent-orange);
+}
