@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Taxidermia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="um site para se inscrever no curso" />
+    <meta name="author" content="Guimarães Ana" />
+    <meta name="keywords" content="inscrição, curso, UFR" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="icon" type="image/png" href="/images/lobo_guara.png" />
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=Inter:wght=100..900&family=Noto+Serif:ital,wght=0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/lobo_guara.png"
+            alt="logo lobo guará"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li>
+              <a class="nav__link" href="#warning">Avisos</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#reservation">Inscrição</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#partners">Colaboradores</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="header__title">
+          <span class="header__span-accent"> Curso de Taxidermia</span>
+          no instituto de biologia da UFR
+        </h1>
+        <p class="header__description">
+          Este é um curso dado pela polícia ambiental,
+          com o objetivo de ensinar aos alunos como preservar animais de forma correta,
+          para que eles possam ser estudados e analisados.
+        </p>
+
+        <div class="header__footer">
+          <ul class="header__footer-list">
+            <li>
+              <p class="header__paragraph">Data:</p>
+            </li>
+            <li>
+              <p class="header__paragraph">Dia 20 a 24 de Julho</p>
+            </li>
+            <li>
+              <p class="header__paragraph">Matutino e Vespertino</p>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="warning" id="warning">
+          <h2 class="warning__title">Descrição sobre como irá funcionar a inscrição do curso de taxidermia</h2>
+          <p class="warning__description">As inscrições estarão abertas até sexta-feira. Só irá participar do curso quem passou na matéria de Histologia Animal, sendo necessário o envio do histórico parcial do aluno. Aqueles que forem aceitos para realizar o curso receberão um e-mail de confirmação; os que não passarem não receberão o e-mail.</p>
+        </section>
+
+        <!-- SEÇÃO: FORMULÁRIO DE INSCRIÇÃO CONECTADO AO FORMSPREE -->
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Formulário de Inscrição</h2>
+
+          <form class="reservation__form" id="formInscricao" action="https://formspree.io" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="nome" class="form-group__label">Nome Completo:</label>
+              <input type="text" id="nome" name="nome" class="form-group__input" required placeholder="Digite seu nome completo">
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-group__label">E-mail Acadêmico / Pessoal:</label>
+              <input type="email" id="email" name="_replyto" class="form-group__input" required placeholder="exemplo@ufr.edu.br">
+            </div>
+
+            <div class="form-group">
+              <label for="rga" class="form-group__label">Número do RGA:</label>
+              <input type="text" id="rga" name="rga" class="form-group__input" required placeholder="Digite seu RGA">
+            </div>
+
+            <div class="form-group">
+              <label for="historico" class="form-group__label">Histórico Parcial (Apenas PDF):</label>
+              <input type="file" id="historico" name="historico" class="form-group__file" accept=".pdf" required>
+            </div>
+
+            <button type="submit" class="reservation__button">Enviar Inscrição</button>
+          </form>
+        </section>
+
+        <!-- SEÇÃO: LOGO DOS COLABORADORES -->
+        <section class="partners" id="partners">
+          <h2 class="partners__title">Realização e Apoio</h2>
+          <div class="partners__container">
+            <!-- Substitua os caminhos das imagens (src) pelos arquivos reais das logos -->
+            <img src="./images/Escudo_UFR.png" alt="Logo UFR" class="partners__logo" />
+            <img src="./images/policia_ambiental_am.png" alt="Logo Polícia Ambiental" class="partners__logo" />
+            <img src="./images/biologia.png" alt="Logo Instituto de Biologia" class="partners__logo" />
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
