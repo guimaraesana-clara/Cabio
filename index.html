@@ -69,33 +69,41 @@
         </section>
 
         <!-- SEÇÃO: FORMULÁRIO DE INSCRIÇÃO CONECTADO AO FORMSPREE -->
+               <!-- SEÇÃO: FORMULÁRIO DE INSCRIÇÃO CONECTADO AO FORMSUBMIT -->
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Formulário de Inscrição</h2>
 
-          <form class="reservation__form" id="formInscricao" action="https://formspree.io/f/meeboydk" method="POST" enctype="multipart/form-data">
+          <!-- ATENÇÃO: Substitua seu-email@ufr.edu.br pelo e-mail onde quer receber as inscrições -->
+          <form class="reservation__form" id="formInscricao" action="https://formsubmit.co" method="POST" enctype="multipart/form-data">
+
+            <!-- Configurações Extras do FormSubmit -->
+            <input type="hidden" name="_subject" value="Nova Inscrição - Curso de Taxidermia">
+            <input type="hidden" name="_captcha" value="false"> <!-- Remove o teste de robô chato para o aluno -->
+
             <div class="form-group">
               <label for="nome" class="form-group__label">Nome Completo:</label>
-              <input type="text" id="nome" name="nome" class="form-group__input" required placeholder="Digite seu nome completo">
+              <input type="text" id="nome" name="Nome Completo" class="form-group__input" required placeholder="Digite seu nome completo">
             </div>
 
             <div class="form-group">
               <label for="email" class="form-group__label">E-mail Acadêmico / Pessoal:</label>
-              <input type="email" id="email" name="_replyto" class="form-group__input" required placeholder="exemplo@aluno.ufr.edu.br">
+              <input type="email" id="email" name="E-mail" class="form-group__input" required placeholder="exemplo@aluno.ufr.edu.br">
             </div>
 
             <div class="form-group">
               <label for="rga" class="form-group__label">Número do RGA:</label>
-              <input type="text" id="rga" name="rga" class="form-group__input" required placeholder="Digite seu RGA">
+              <input type="text" id="rga" name="RGA" class="form-group__input" required placeholder="Digite seu RGA">
             </div>
 
             <div class="form-group">
               <label for="historico" class="form-group__label">Histórico Parcial (Apenas PDF):</label>
-              <input type="file" id="historico" name="historico" class="form-group__file" accept=".pdf" required>
+              <input type="file" id="historico" name="Historico_PDF" class="form-group__file" accept=".pdf" required>
             </div>
 
             <button type="submit" class="reservation__button">Enviar Inscrição</button>
           </form>
         </section>
+
 
         <!-- SEÇÃO: LOGO DOS COLABORADORES -->
         <section class="partners" id="partners">
