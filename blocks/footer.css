@@ -12,16 +12,6 @@
   padding: 60px 80px 108px;
 }
 
-.footer__circle {
-  background-color: #06e636;
-  position: absolute;
-  top: -128px;
-  left: -44px;
-  border-radius: 50%;
-  height: 340px;
-  width: 340px;
-}
-
 .footer__logo {
   height: 39px;
   width: 105px;
