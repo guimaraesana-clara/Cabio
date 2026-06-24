@@ -7,6 +7,9 @@
 @import url(../blocks/form.css);
 @import url(../blocks/partners.css);
 @import url(../blocks/footer.css);
+/* ==========================================================================
+   REGRAS DE RESPONSIVIDADE PARA CELULARES (ATUALIZADO)
+   ========================================================================== */
 @media (max-width: 900px) {
   .nav {
     flex-direction: column;
@@ -36,7 +39,39 @@
   }
   .header__title { font-size: 38px; line-height: 48px; margin-top: 40px; }
   .header__span-accent { font-size: 38px; line-height: 48px; }
-  .footer__content { flex-direction: column; gap: 40px; padding: 60px 20px; }
-  .footer__copyright { margin: 0 20px auto; }
+
+  /* CORREÇÃO DO RODAPÉ (FOOTER) PARA CELULAR */
+  .footer {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .footer__circle {
+    /* Diminui a bolha verde no celular para não cobrir as informações */
+    height: 180px;
+    width: 180px;
+    top: -60px;
+    left: -20px;
+  }
+
+  .footer__content {
+    flex-direction: column; /* Empilha os blocos (Logo, Contatos, Redes) verticalmente */
+    gap: 40px;
+    padding: 40px 20px; /* Reduz o espaçamento interno que era de 80px */
+    align-items: flex-start; /* Alinha os blocos à esquerda para melhor leitura */
+    text-align: left;
+  }
+
+  .footer__social {
+    width: 100%; /* Garante que o bloco de redes ocupe o espaço disponível */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__copyright {
+    margin: 0 20px auto;
+    padding-bottom: 40px;
+  }
 }
+
 
